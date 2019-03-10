@@ -1,3 +1,5 @@
+A news app made with React as a practice project to build as I learn.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
