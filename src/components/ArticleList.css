@@ -1,5 +1,9 @@
 .article-list {
     margin: 10%;
     padding: 10%;
-    margin-top: 30px;
+    margin-top: 70px !important;
+    position: relative;
+    z-index: 0.3;
+    justify-content: center;
+    background: #F6F6EF;
 }

@@ -11,10 +11,11 @@ const ArticleItem = ({ article, onArticleSelect }) => {
 				<div className="description">{article.description}</div>
 				<div className="article-item-foot extra">
 					<a href={article.url}>{article.source.name}</a>
-					<div className="time">
-						Published:
-						<span className="date">{date}</span>
-						<span className="time">{time}</span>
+					<div>
+						<span>
+							Published:
+							{date} {time}
+						</span>
 					</div>
 				</div>
 			</div>

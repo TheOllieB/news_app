@@ -14,7 +14,8 @@ class App extends React.Component {
 		this.setState({ input: input });
 		const response = await newsApi.get("/everything", {
 			params: {
-				q: input
+				q: input,
+				pageSize: 40
 			}
 		});
 		this.setState({ articles: response.data.articles });

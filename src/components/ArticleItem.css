@@ -1,6 +1,6 @@
 .article-item-foot a {
     align-content: left;
-    color: red;
+    color:#FF6600;
     float: left;
     margin-top: 5px;
 }
@@ -12,11 +12,11 @@
 
 .date {
     margin:5px;
-    float: right;
-    align-content: right;
+    padding: 3px;
 }
 .time {
     margin: 5px;
+    padding: 3px;
 }
 
 .item {
