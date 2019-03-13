@@ -12,7 +12,13 @@
 
 .date {
     margin:5px;
+    float: right;
+    align-content: right;
 }
 .time {
     margin: 5px;
+}
+
+.item {
+    cursor: pointer;
 }

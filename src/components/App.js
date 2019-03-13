@@ -4,13 +4,14 @@ import ArticleList from "./ArticleList";
 import newsApi from "../apis/newsApi";
 
 class App extends React.Component {
-	state = { articles: [] };
+	state = { articles: [], input: "", recent: [] };
 
 	componentDidMount() {
 		this.onInputSubmit("bitcoin");
 	}
 
 	onInputSubmit = async input => {
+		this.setState({ input: input });
 		const response = await newsApi.get("/everything", {
 			params: {
 				q: input
@@ -27,8 +28,17 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="ui">
-				<div className="ui container">
-					<SearchBar onFormSubmit={this.onInputSubmit} />
+				<div className="ui">
+					<div className="ui container">
+						<SearchBar onFormSubmit={this.onInputSubmit} />
+						<div>
+							Results matching:
+							<span>
+								{this.state.input.charAt(0).toUpperCase() +
+									this.state.input.slice(1)}
+							</span>
+						</div>
+					</div>
 				</div>
 				<div className="ui container">
 					<ArticleList

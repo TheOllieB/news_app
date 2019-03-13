@@ -11,8 +11,11 @@ const ArticleItem = ({ article, onArticleSelect }) => {
 				<div className="description">{article.description}</div>
 				<div className="article-item-foot extra">
 					<a href={article.url}>{article.source.name}</a>
-					<span className="date">{date}</span>
-					<span className="time">{time}</span>
+					<div className="time">
+						Published:
+						<span className="date">{date}</span>
+						<span className="time">{time}</span>
+					</div>
 				</div>
 			</div>
 		</div>
