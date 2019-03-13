@@ -1,0 +1,18 @@
+.article-item-foot a {
+    align-content: left;
+    color: red;
+    float: left;
+    margin-top: 5px;
+}
+
+.article-item-foot span {
+    align-content: right;
+    float: right;
+}
+
+.date {
+    margin:5px;
+}
+.time {
+    margin: 5px;
+}
